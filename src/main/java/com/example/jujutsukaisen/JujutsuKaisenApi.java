@@ -12,10 +12,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableAutoConfiguration
 @SecurityScheme(name = "jujutsukaisen", scheme = "bearer", type = SecuritySchemeType.HTTP, in = SecuritySchemeIn.HEADER)
 @EnableJpaRepositories(basePackages = "com.example.jujutsukaisen.repository")
-public class TesttestApplication {
+public class JujutsuKaisenApi {
 
     public static void main(String[] args) {
-        SpringApplication.run(TesttestApplication.class, args);
+        SpringApplication.run(JujutsuKaisenApi.class, args);
     }
 
 }

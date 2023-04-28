@@ -4,6 +4,7 @@ import com.example.jujutsukaisen.dto.EpisodeCharacterDto;
 import com.example.jujutsukaisen.model.AnimeCharacters;
 import com.example.jujutsukaisen.model.Episode;
 import com.example.jujutsukaisen.repository.EpisodeRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 public class EpisodeService {
 
     @Autowired

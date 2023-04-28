@@ -9,16 +9,13 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AnimeCharactersDto {
-//validacije
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-    private Integer id;//dozvoli bazi ?
+    private Integer id;
     private String name;
     private String birthday;
-    private String gender;//enum
-    private String status;//emum?
+    private String gender;
+    private String status;
     private String occupation;
     private String grade;
     private String specieType;
-
-
 }

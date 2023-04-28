@@ -17,7 +17,7 @@ import java.util.List;
 @Tag(name = "Anime Characters Controller")
 public class AnimeCharacterController {
 
-    //paginacija
+
 
     @Autowired
     private AnimeCharactersRepository animeCharactersRepository;
@@ -26,19 +26,16 @@ public class AnimeCharacterController {
     private AnimeCharactersMapper animeCharactersMapper;
 
 
-    //Get all character
     @RequestMapping(value = "/allCharacters", method = RequestMethod.GET)
     public List<AnimeCharactersDto> getModel(@RequestParam(required = false) String gender){
         return animeCharactersMapper.toDtos(animeCharactersRepository.findAll());
     }
 
-    //Get multiple characters by id
     @RequestMapping(value = "/characters/{ids}", method = RequestMethod.GET)
     public List<AnimeCharactersDto> getCharatersByIds(@PathVariable List<Integer> ids){
         return animeCharactersMapper.toDtos(animeCharactersRepository.findAllByIds(ids));
     }
 
-    //Get character by id
     @RequestMapping(value = "/character/{id}" , method = RequestMethod.GET)
     public AnimeCharactersDto getCharaterById(@PathVariable Integer id){
         return animeCharactersMapper.toDto(animeCharactersRepository.getById(id));

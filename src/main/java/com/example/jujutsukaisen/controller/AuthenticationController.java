@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @SecurityRequirement(name = "jujutsukaisen")
 @Tag(name= "Jujutsu Kaisen API")
-public class Rest {
+public class AuthenticationController  {
     @Autowired
     private EpisodeRepository episodeRepository;
 

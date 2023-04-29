@@ -34,14 +34,6 @@ The API will now be available at <b>http://localhost:8080</b>.
 <h3>API Endpoints</h3>
 The following endpoints are available:
 
-<b>Get all episodes<b>
-
-Example body:
-``The API will now be available at <b>http://localhost:8080</b>.
-
-<h3>API Endpoints</h3>
-The following endpoints are available:
-
 <b>Get all episodes<b><br>
 ``GET /episodes``
 
